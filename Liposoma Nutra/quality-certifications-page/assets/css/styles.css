@@ -200,6 +200,12 @@ h4 {
   max-width: 74ch;
 }
 
+.section-copy {
+  margin: var(--space-3) 0 0;
+  color: var(--color-muted);
+  max-width: 72ch;
+}
+
 .action-row {
   margin-top: var(--space-4);
   display: flex;
@@ -321,6 +327,21 @@ h4 {
   margin-top: var(--space-4);
 }
 
+.inline-cta {
+  margin-top: var(--space-4);
+  border: 1px solid #c9dced;
+  border-radius: var(--radius-md);
+  background: #f3f8fd;
+  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.inline-cta p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
 .doc-icon {
   margin: 0 0 var(--space-2);
   font-size: 1.3rem;
@@ -351,7 +372,7 @@ h4 {
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 26rem;
+  min-width: 22rem;
   font-size: 0.92rem;
 }
 
@@ -425,11 +446,6 @@ th {
   border: 0;
 }
 
-.sr-anchor-target {
-  height: 0;
-  overflow: hidden;
-}
-
 /* Responsive rules: mobile-first with simple scale-up */
 @media (min-width: 48rem) {
   .hero-grid {
@@ -456,5 +472,16 @@ th {
 @media (min-width: 62rem) {
   .sub-nav-inner {
     justify-content: center;
+  }
+}
+
+@media (max-width: 22rem) {
+  table {
+    min-width: 20rem;
+  }
+
+  th,
+  td {
+    padding: 0.55rem 0.6rem;
   }
 }
